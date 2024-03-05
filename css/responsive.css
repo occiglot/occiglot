@@ -125,6 +125,9 @@
     .mean-container .mean-nav ul li a.mean-expand {
         top: 0;
     }
+    .image_1 {
+        max-width: 250px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -185,6 +188,9 @@
         display: none;
     }
     .banner_taital {
+        font-size: 25px;
+    }
+    .banner_sub {
         font-size: 30px;
     }
     .banner_section {
@@ -225,6 +231,12 @@
     }
     .most_text {
         font-size: 26px;
+    }
+    .main_text {
+        font-size: 20px;
+    }
+    .text-author {
+         font-size: 16px;
     }
     .follow_text {
         font-size: 14px;
@@ -310,6 +322,9 @@
         display: none;
     }
     .banner_taital {
+        font-size: 25px;
+    }
+    .banner_sub {
         font-size: 30px;
     }
     .banner_section {
@@ -350,6 +365,12 @@
     }
     .most_text {
         font-size: 26px;
+    }
+    .main_text {
+        font-size: 20px;
+    }
+    .text-author {
+         font-size: 16px;
     }
     .follow_text {
         font-size: 14px;
@@ -436,6 +457,9 @@
         display: none;
     }
     .banner_taital {
+        font-size: 25px;
+    }
+    .banner_sub {
         font-size: 30px;
     }
     .banner_section {
@@ -476,6 +500,12 @@
     }
     .most_text {
         font-size: 20px;
+    }
+    .main_text {
+        font-size: 15px;
+    }
+    .text-author {
+         font-size: 12px;
     }
     .image_5 {
         padding-top: 30px;

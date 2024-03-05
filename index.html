@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <!-- basic -->
     <meta charset="utf-8">
@@ -41,10 +41,8 @@
             <h2 class="banner_sub">Poly<span class="banner_highlight">glot</span> Language Models for the <span
                     class="banner_highlight">Occi</span>dent</span></h2>
             <div class="image_main">
-                <div class="container" style="max-width:600px">
+                <div class="container" style="max-width:600px;">
                     <img src="images/occiglot_logo.png" class="image_1">
-                    <div class="about_main">
-                    </div>
                 </div>
             </div>
         </div>
@@ -61,9 +59,25 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-20 col-sm-20">
+                <p class="main_text">Today, we announce OcciGlot: A large-scale research collective for open-source
+                    development of Large Language Models by and for Europe. </p>
+                <p class="text-author">05.03.2024 - Manuel Brack, Kristian Kersting, Patrick Schramowski, Wolfgang
+                    Stille</p>
+
                 <h2 class="most_text">Mission Statement</h2>
-                <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                <p class="main_text">Recent advancements in transformer-based language models have demonstrated the
+                    potentially disruptive impact of this technology.
+                    Unfortunately, the high cost and required skill sets associated with training Large Language Models
+                    (LLM) leave the field dominated by a handful of big tech companies and deep tech startups, making
+                    core European values such as linguistic diversity and cultural richness an afterthought of
+                    economically driven decisions.
+                    </br></br>
+                    OcciGlot strongly believes that dedicated language modeling solutions are key to maintaining
+                    Europe’s academic and economic competitiveness and AI sovereignty. Importantly, high-quality,
+                    fundamental research and IP-driven technological applications require direct access to these models
+                    and the data that went into training them. As an academic, non-profit research collaboration,
+                    OcciGlot is committed to open science and, thus, open-source LLM development.
+                </p>
             </div>
         </div>
     </div>
@@ -73,8 +87,21 @@
         <div class="row">
             <div class="col-lg-20 col-sm-20">
                 <h2 class="most_text">Model Release v0.1</h2>
-                <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <a class="banner_highlight" href="./technical_report_v0.1.html">technical report</a></p>
+                <p class="main_text">As part of our commitment to transparent research, we release today 10 intermediary
+                    7B model checkpoints. This first release focuses on the 5 largest European languages: English,
+                    German, French, Spanish and Italian.
+                    </br>
+                    We started from an existing pre-trained model for English and performed bi-lingual continual
+                    pre-training and subsequent instruction tuning for each language. Additionally, we also trained a
+                    joint model covering all five languages. All pre-trained and instruction-tuned checkpoints are
+                    available on <a class="banner_highlight"
+                                    href="https://huggingface.co/collections/occiglot/occiglot-eu5-7b-v01-65dbed502a6348b052695e01">huggingface</a>.
+                    </br>
+                    In total, we showed 700B additional tokens during continual pre-training and roughly 1B tokens for
+                    instruction tuning. For more details, check out our <a class="banner_highlight"
+                                                                           href="./technical_report_v0.1.html">technical
+                        report</a>.
+                </p>
             </div>
         </div>
     </div>
@@ -85,8 +112,34 @@
         <div class="row">
             <div class="col-lg-20 col-sm-20">
                 <h2 class="most_text">Call for collaboration</h2>
-                <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                <p class="main_text">We are actively seeking collaborations within the community and feedback from those
+                    that our work aims to benefit. OcciGlot will mainly operate through our <a class="banner_highlight"
+                                                                                               href="https://discord.gg/xMT7MmnybY">public
+                        discord server</a> to exchange ideas, discuss research, share findings, and coordinate projects.
+                    We strongly believe that the (academic) Machine Learning and NLP communities can only benefit from
+                    sharing insights, so we aim to provide a hub for this exchange. In addition to building upon and
+                    working with our models, we see three major opportunities for collaboration: </p>
+                <ol>
+                    <li class="main_text"><span style="font-weight: bold">1. Large-scale training data.</span>
+                        (Continual) pre-training requires large amounts of high-quality text in the target language,
+                        which is especially challenging for low-resource languages.
+                    </li>
+                    <li class="main_text"><span style="font-weight: bold">2. Instruction tuning data.</span> Chat and
+                        instruction following capabilities can only be elicited with respective examples in the target
+                        language. We hope to find partners for every European language that can help to create and
+                        curate these datasets.
+                    </li>
+                    <li class="main_text"><span style="font-weight: bold">3. Model evaluation.</span> Evaluating the
+                        capabilities of LLMs is crucial to making informed decisions about their development and
+                        deployment. However, in non-English settings, specifically, evaluation relies mostly on
+                        auto-translated, noisy benchmarks that do not accurately reflect model performance. An intimate
+                        understanding of the language and culture is required for building better evaluation suites, for
+                        which we seek local collaborators.
+                    </li>
+                </ol>
+                <p class="main_text">Furthermore, we welcome any ideas for collaboration that align with our mission and
+                    encourage researchers to reach out. Additionally, OcciGlot is calling upon the existing localized
+                    projects to connect with the community to benefit mutually.</p>
             </div>
         </div>
     </div>
@@ -96,42 +149,112 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-20 col-sm-20">
-                <h2 class="most_text">Partners</h2>
-
-                <ul>
-                    <li>DFKI</li>
-                    <li>Hessian.AI</li>
-                    <li>CommonCrawl</li>
-                    <li>TU Darmstadt</li>
-                    <li>INSAIT</li>
-                    <li>ETH Zurich</li>
-                    <li>BSC</li>
-                    <li>PleasAI</li>
-                    <li>EleutherAI</li>
-                    <li>LAION</li>
-                    <li>Ontocord</li>
-                    <li>Together</li>
-                    <li>sapienza university of rome</li>
-                </ul>
+                <h2 class="most_text">Roadmap</h2>
+                <p class="main_text">The main focus of OcciGlot in the upcoming months will be the creation of one
+                    cohesive language modeling system supporting all 24 official languages within the European Union.
+                    Towards that target, we have already collected roughly 1 trillion tokens of non-English pre-training
+                    data. This corpus is continuously being expanded through additional data gathered by our
+                    collaborators and further web crawling. Furthermore, hessian.AI is committed to supporting the
+                    initiative by providing a significant amount of computation time in 2024 on their AI supercomputer
+                    fortytwo (42).
+                    </br>
+                    We envision the creation of a European system to follow three distinct phases, each of which will
+                    take approximately 2-3 months.
+                <ol>
+                    <li class="main_text"><span style="font-weight: bold">1. Bilingual Models.</span> Following the
+                        approach of the initial model release, we will train and open-source similar bilingual models
+                        for all European languages with enough readily available data. At the time of writing, these
+                        are: Dutch, Portuguese, Ukrainian, Czech, Slovak, Polish, Hungarian, Greek, and Bulgarian.
+                    </li>
+                    <li class="main_text"><span style="font-weight: bold">2. Research Questions.</span> In the second
+                        phase, we will systematically investigate important research questions leading towards a joint
+                        European model. Our research will mainly focus on a) tokenizer design and extension for
+                        multilingual models, b) inter-lingual effects of multilingual model training for language
+                        clustering, and c) routing for multilingual mixtures of experts to, e.g., transfer cultural
+                        knowledge.
+                    </li>
+                    <li class="main_text"><span style="font-weight: bold">3. Mixture of Europe.</span> Mixture of
+                        Europe. The efforts of phases one and two will culminate in creating a sophisticated mixture of
+                        dedicated language experts.
+                    </li>
+                </ol>
+                </p>
             </div>
         </div>
     </div>
 </div>
 
+<div class="about_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-20 col-sm-20">
+                <h2 class="most_text">Partners &amp; Collaborators</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 logo-wrapper">
+                <a href="https://hessian.ai">
+                <img class="logo_partner" src="images/logos/hessian-ai-logo-color-2.png">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 logo-wrapper">
+                <a href="https://www.dfki.de">
+                <img class="logo_partner" src="images/logos/dfki_Logo_digital_guam_blue.png">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 logo-wrapper">
+                <a href="https://www.tu-darmstadt.de">
+                <img class="logo_partner" src="images/logos/TU_Darmstadt_Logo.svg">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 logo-wrapper">
+                <a href="https://www.ontocord.ai">
+                <img class="logo_partner" src="images/logos/ontocord_logo.jpg">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 logo-wrapper">
+                    <img href="pleais.fr" class="logo_partner" src="images/logos/pleais.svg">
+            </div>
+            <div class="col-lg-4 col-sm-4 logo-wrapper">
+                <a href="https://www.eleuther.ai">
+                    <img class="logo_partner" src="images/logos/eleutherai.png">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 logo-wrapper">
+                <a href="https://www.bsc.es">
+                    <img class="logo_partner" src="images/logos/biysc_bsc_logo.jpg.png">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 logo-wrapper">
+                <a href="https://www.uniroma1.it/en/pagina-strutturale/home">
+                    <img class="logo_partner" src="images/logos/sapienza-big.png">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 logo-wrapper">
+                <h2 class="most_text">Others to be announced soon...</h2>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--
 <div class="follow_icon">
     <ul>
         <li><a href="#"><img src="images/discord-icon-1.png"></a></li>
         <li><a href="#"><img src="images/x-icon-1.png"></a></li>
     </ul>
 </div>
+-->
 
 <div class="footer_section layout_padding">
     <div class="container">
         <div class="footer_menu">
             <ul>
-                <li><a href="#">Discord</a></li>
-                <li><a href="#">X</a></li>
-                <li><a href="#">Huggingface</a></li>
+                <li><a href="https://discord.gg/xMT7MmnybY">Discord</a></li>
+                <li><a href="https://twitter.com/occiglot">X</a></li>
+                <li><a href="https://huggingface.co/occiglot">Huggingface</a></li>
+                <li><a href="mailto:occiglot@gmail.com">E-Mail</a></li>
             </ul>
         </div>
     </div>

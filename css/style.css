@@ -133,11 +133,12 @@ ol {
     list-style: none;
 }
 
-p {
+.main_text{
     margin: 20px;
     font-weight: 300;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 25px;
+    line-height: 35px;
+    color:black;
 }
 
 a {
@@ -145,6 +146,8 @@ a {
     text-decoration: none;
     outline: none !important;
 }
+
+
 
 a,
 .btn {
@@ -156,7 +159,9 @@ a,
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-
+ol {
+    padding-left: 25px;
+}
 img {
     max-width: 100%;
     height: auto;
@@ -230,7 +235,6 @@ button {
 }
 
 .header_section {
-    background-image: url(../images/banner-bg.png);
     height: auto;
     background-size: 100%;
     width: 100%;
@@ -269,7 +273,7 @@ button {
     height: 700px;
     background-size: 100%;
     margin-top: 10px;
-    margin-bottom: 390px;
+    margin-bottom: 200px;
 }
 
 .banner_taital {
@@ -313,6 +317,7 @@ button {
     width: 100%;
     float: left;
     border: 30px solid #ffffff;
+    max-width: 600px;
 }
 
 .contact_bt {
@@ -540,6 +545,10 @@ button {
     font-size: 16px;
     color: #1a1a1a;
     margin: 0px;
+}
+.text-author {
+    color: #424242;
+    font-size: 20px;
 }
 
 .social_icon_main {
@@ -1090,4 +1099,12 @@ textarea#comment::placeholder {
 
 .margin_top_90 {
     margin-top: 90px;
+}
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo_partner {
+    padding:25px;
 }
