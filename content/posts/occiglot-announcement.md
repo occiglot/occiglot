@@ -1,5 +1,5 @@
 ---
-title: "Announcing Occiglot: Ployglot Language Models for the Occident"
+title: "Announcing Occiglot: Polyglot Language Models for the Occident"
 author: "Occiglot Team"
 date: "2024-03-06"
 description: "Today, we announce Occiglot: A large-scale research collective for open-source development of Large Language Models by and for Europe."
