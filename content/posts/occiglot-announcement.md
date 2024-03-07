@@ -1,7 +1,7 @@
 ---
 title: "Announcing Occiglot: Ployglot Language Models for the Occident"
 author: "Occiglot Team"
-date: "2024-03-07"
+date: "2024-03-06"
 description: "Today, we announce Occiglot: A large-scale research collective for open-source development of Large Language Models by and for Europe."
 tags: ["models", "annoucements"]
 cover:
@@ -13,13 +13,12 @@ TocOpen: false
 
 ## Mission Statement
 
-Recent advancements in transformer-based language models have demonstrated the potentially disruptive impact of this technology. Unfortunately, the high cost and required skill sets associated with training Large Language Models (LLM) leave the field dominated by a handful of big tech companies and deep tech startups, making core European values such as linguistic diversity, multilingualism, and cultural richness an afterthought of economically driven decisions. 
+Recent advancements in transformer-based language models have demonstrated the potentially disruptive impact of this technology. Unfortunately, the high cost and required skill sets associated with training Large Language Models (LLM) leave the field dominated by a handful of big tech companies and deep tech startups, making core European values such as linguistic diversity, multilingualism, and cultural richness an afterthought of economically driven decisions. 
 
-Occiglot strongly believes that dedicated language modeling solutions are key to maintaining Europe’s academic and economic competitiveness and AI sovereignty. They are also necessary to achieve the long-term goal of digital language equality in Europe. Crucially, high-quality, fundamental research and IP-driven technological applications require direct access to these models and the data that went into training them. As an academic, non-profit research collective, Occiglot is committed to open science and, thus, open-source LLM development. 
-
+Occiglot strongly believes that dedicated language modeling solutions are key to maintaining Europe’s academic and economic competitiveness and AI sovereignty. They are also necessary to achieve the long-term goal of digital language equality in Europe. Crucially, high-quality, fundamental research and IP-driven technological applications require direct access to these models and the data that went into training them. As an academic, non-profit research collective, Occiglot is committed to open science and, thus, open-source LLM development. 
 ## Model Release v0.1
 
-As part of our commitment to transparent research, today we release ten intermediary 7B model checkpoints. This first release focuses on the five largest European languages: English, German, French, Spanish, and Italian.\
+As part of our commitment to transparent research, today we release ten intermediary 7B model checkpoints. This first release focuses on the five largest European languages: English, German, French, Spanish, and Italian. \
 We started from [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1) – an existing pre-trained model for English and performed bi-lingual continual pre-training and subsequent instruction tuning for each language. Additionally, we also trained a multilingual model covering all five languages. All pre-trained and instruction-tuned checkpoints are available on [Hugging Face](https://huggingface.co/collections/occiglot/occiglot-eu5-7b-v01-65dbed502a6348b052695e01) under Apache 2.0 license.
  
 
@@ -51,5 +50,6 @@ We envision the creation of a European approach to follow three distinct phases.
 
 ## Acknowledgments
 
+Occiglot’s conception was, in large parts, enabled by the [German Research Center for AI (DFKI)](https://www.dfki.de/en/web).
 We are grateful to the [hessian.AI Innovation Lab](http://hessian.AI) (funded by the [Hessian Ministry for Digital Strategy and Innovation](https://digitales.hessen.de)) and the hessian.AISC Service Center (funded by the [Federal Ministry of Education and Research, BMBF](https://www.bmbf.de/bmbf/en/home/home_node.html)) for the collaboration and joint use of their AI supercomputer fortytwo. The curation of the training data is partially funded by the German [Federal Ministry for Economic Affairs and Climate Action (BMWK)](https://www.bmwk.de/Navigation/EN/Home/home.html) through the project [OpenGPT-X](https://opengpt-x.de/en/) (project no. 68GX21007D). 
 
