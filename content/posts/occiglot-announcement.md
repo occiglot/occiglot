@@ -22,7 +22,7 @@ As part of our commitment to transparent research, today we release ten intermed
 We started from [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1) – an existing pre-trained model for English and performed bi-lingual continual pre-training and subsequent instruction tuning for each language. Additionally, we also trained a multilingual model covering all five languages. All pre-trained and instruction-tuned checkpoints are available on [Hugging Face](https://huggingface.co/collections/occiglot/occiglot-eu5-7b-v01-65dbed502a6348b052695e01) under Apache 2.0 license.
  
 
-In total, we used 700B additional multilingual tokens during continual pre-training and roughly 1B tokens for instruction tuning. For more details, check out our [technical report]({{< relref "/posts/technical-report-v01.md" >}}/posts/technical-report-v01/). 
+In total, we used 700B additional multilingual tokens during continual pre-training and roughly 1B tokens for instruction tuning. For more details, check out our [technical report]({{< relref "/posts/technical-report-v01.md" >}}). 
 
 ## Call for Collaboration
 
@@ -56,16 +56,16 @@ We are grateful to the [hessian.AI Innovation Lab](http://hessian.AI) (funded by
 **Collaborators**
 
 <div class="collaborators">
-<a href="https://www.dfki.de/"><img src="/logos/dfki.png"></a>
-<a href="https://hessian.ai/"><img src="/logos/hessian-ai.png" style="height: 60px"></a>
-<a href="https://www.tu-darmstadt.de/"><img src="/logos/tu-darmstadt.svg"></a>
-<a href="https://commoncrawl.org/"><img src="/logos/commoncrawl.svg" style="height: 60px"></a>
-<a href="https://www.ontocord.ai/"><img src="/logos/ontocord.jpg"></a>
-<a href="https://huggingface.co/PleIAs"><img src="/logos/pleais.svg"></a>
-<a href="https://www.eleuther.ai/"><img src="/logos/eleutherai.png"></a>
-<a href="https://huggingface.co/DiscoResearch"><img src="/logos/discoresearch.webp"></a>
-<a href="https://www.bsc.es"><img src="/logos/bsc.png"  style="height: 60px"></a>
+<a href="https://www.dfki.de/"><img src="/occiglot/logos/dfki.png"></a>
+<a href="https://hessian.ai/"><img src="/occiglot/logos/hessian-ai.png" style="height: 60px"></a>
+<a href="https://www.tu-darmstadt.de/"><img src="/occiglot/logos/tu-darmstadt.svg"></a>
+<a href="https://commoncrawl.org/"><img src="/occiglot/logos/commoncrawl.svg" style="height: 60px"></a>
+<a href="https://www.ontocord.ai/"><img src="/occiglot/logos/ontocord.jpg"></a>
+<a href="https://huggingface.co/PleIAs"><img src="/occiglot/logos/pleais.svg"></a>
+<a href="https://www.eleuther.ai/"><img src="/occiglot/logos/eleutherai.png"></a>
+<a href="https://huggingface.co/DiscoResearch"><img src="/occiglot/logos/discoresearch.webp"></a>
+<a href="https://www.bsc.es"><img src="/occiglot/logos/bsc.png"  style="height: 60px"></a>
 <!-- <a href="https://nlp.uniroma1.it/"><img src="/logos/sapienza.png"></a> -->
-<a href="https://www.european-language-grid.eu"><img src="/logos/elg.png"  style="height: 60px"></a>
-<a href="https://european-language-equality.eu"><img src="/logos/ele.png"  style="height: 60px"></a>
+<a href="https://www.european-language-grid.eu"><img src="/occiglot/logos/elg.png"  style="height: 60px"></a>
+<a href="https://european-language-equality.eu"><img src="/occiglot/logos/ele.png"  style="height: 60px"></a>
 </div>
