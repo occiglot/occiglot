@@ -22,7 +22,7 @@ As part of our commitment to transparent research, today we release ten intermed
 We started from [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1) – an existing pre-trained model for English and performed bi-lingual continual pre-training and subsequent instruction tuning for each language. Additionally, we also trained a multilingual model covering all five languages. All pre-trained and instruction-tuned checkpoints are available on [Hugging Face](https://huggingface.co/collections/occiglot/occiglot-eu5-7b-v01-65dbed502a6348b052695e01) under Apache 2.0 license.
  
 
-In total, we used 700B additional multilingual tokens during continual pre-training and roughly 1B tokens for instruction tuning. For more details, check out our [technical report](https://occiglot.github.io/occiglot/posts/technical-report-v01/). 
+In total, we used 700B additional multilingual tokens during continual pre-training and roughly 1B tokens for instruction tuning. For more details, check out our [technical report]({{< relref "/posts/technical-report-v01.md" >}}/posts/technical-report-v01/). 
 
 ## Call for Collaboration
 
@@ -53,3 +53,19 @@ We envision the creation of a European approach to follow three distinct phases.
 Occiglot’s conception was, in large parts, enabled by the [German Research Center for AI (DFKI)](https://www.dfki.de/en/web).
 We are grateful to the [hessian.AI Innovation Lab](http://hessian.AI) (funded by the [Hessian Ministry for Digital Strategy and Innovation](https://digitales.hessen.de)) and the hessian.AISC Service Center (funded by the [Federal Ministry of Education and Research, BMBF](https://www.bmbf.de/bmbf/en/home/home_node.html)) for the collaboration and joint use of their AI supercomputer fortytwo. The curation of the training data is partially funded by the German [Federal Ministry for Economic Affairs and Climate Action (BMWK)](https://www.bmwk.de/Navigation/EN/Home/home.html) through the project [OpenGPT-X](https://opengpt-x.de/en/) (project no. 68GX21007D). 
 
+**Collaborators**
+
+<div class="collaborators">
+<a href="https://www.dfki.de/"><img src="/logos/dfki.png"></a>
+<a href="https://hessian.ai/"><img src="/logos/hessian-ai.png" style="height: 60px"></a>
+<a href="https://www.tu-darmstadt.de/"><img src="/logos/tu-darmstadt.svg"></a>
+<a href="https://commoncrawl.org/"><img src="/logos/commoncrawl.svg" style="height: 60px"></a>
+<a href="https://www.ontocord.ai/"><img src="/logos/ontocord.jpg"></a>
+<a href="https://huggingface.co/PleIAs"><img src="/logos/pleais.svg"></a>
+<a href="https://www.eleuther.ai/"><img src="/logos/eleutherai.png"></a>
+<a href="https://huggingface.co/DiscoResearch"><img src="/logos/discoresearch.webp"></a>
+<a href="https://www.bsc.es"><img src="/logos/bsc.png"  style="height: 60px"></a>
+<!-- <a href="https://nlp.uniroma1.it/"><img src="/logos/sapienza.png"></a> -->
+<a href="https://www.european-language-grid.eu"><img src="/logos/elg.png"  style="height: 60px"></a>
+<a href="https://european-language-equality.eu"><img src="/logos/ele.png"  style="height: 60px"></a>
+</div>

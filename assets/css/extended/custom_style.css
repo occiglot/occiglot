@@ -5,3 +5,17 @@
 .lang-switch {
     display: none;
 }
+
+div.collaborators {
+    text-align: center;
+}
+
+div.collaborators a {
+    box-shadow: 0 0 !important;
+}
+
+div.collaborators img {
+    display: inline;
+    height: 100px;
+    vertical-align: middle;
+}
