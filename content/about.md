@@ -24,3 +24,5 @@ If you are working on topics relevant to European LLMs or seek to contribute to 
 <a href="https://www.european-language-grid.eu"><img src="/occiglot/logos/elg.png"  style="height: 60px"></a>
 <a href="https://european-language-equality.eu"><img src="/occiglot/logos/ele.png"  style="height: 60px"></a>
 </div>
+
+More to be announced soon...
