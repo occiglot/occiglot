@@ -16,7 +16,7 @@ If you are working on topics relevant to European LLMs or seek to contribute to 
 <a href="https://www.tu-darmstadt.de/"><img src="/occiglot/logos/tu-darmstadt.svg"></a>
 <a href="https://commoncrawl.org/"><img src="/occiglot/logos/commoncrawl.svg" style="height: 60px"></a>
 <a href="https://www.ontocord.ai/"><img src="/occiglot/logos/ontocord.jpg"></a>
-<a href="https://huggingface.co/PleIAs"><img src="/occiglot/logos/pleais.svg"></a>
+<a href="https://huggingface.co/PleIAs"><img src="/occiglot/logos/pleias_logo_black.png" style="height: 60px"></a>
 <a href="https://www.eleuther.ai/"><img src="/occiglot/logos/eleutherai.png"></a>
 <a href="https://huggingface.co/DiscoResearch"><img src="/occiglot/logos/discoresearch.webp"></a>
 <a href="https://www.bsc.es"><img src="/occiglot/logos/bsc.png"  style="height: 60px"></a>
