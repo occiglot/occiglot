@@ -8,6 +8,8 @@
 
 div.collaborators {
     text-align: center;
+    background: white;
+    border-radius: 8px;
 }
 
 div.collaborators a {
