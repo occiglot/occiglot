@@ -32,7 +32,7 @@ We are actively seeking collaborations within the community and feedback from th
 
 2. _Instruction tuning data._ Chat and instruction-following capabilities can only be created with corresponding examples in the target language. We hope to find partners for every European language that can help us create and curate these datasets.
 
-3. _Model evaluation._Evaluating the capabilities of LLMs is crucial to making informed decisions about their development and deployment. However, in non-English settings, specifically, evaluation relies mostly on auto-translated, noisy benchmarks that do not accurately reflect model performance. An intimate understanding of the language and culture is required for building better evaluation suites, for which we seek local collaborators.
+3. _Model evaluation._ Evaluating the capabilities of LLMs is crucial to making informed decisions about their development and deployment. However, in non-English settings, specifically, evaluation relies mostly on auto-translated, noisy benchmarks that do not accurately reflect model performance. An intimate understanding of the language and culture is required for building better evaluation suites, for which we seek local collaborators.
 
 Furthermore, we welcome any ideas for collaboration that align with our mission and encourage researchers to reach out. Additionally, Occiglot is calling upon the existing localized projects to connect with the community for mutual benefit.
 
