@@ -27,3 +27,7 @@ If you are working on topics relevant to European LLMs or seek to contribute to 
 </div>
 
 More to be announced soon...
+
+**Contact**
+
+Join our [Discord server](https://discord.gg/wUpvYs4XvM) or send an email to `hello(at)occiglot.org`
