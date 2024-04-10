@@ -59,7 +59,7 @@ We are grateful to the [hessian.AI Innovation Lab](http://hessian.AI) (funded by
 <a href="https://www.dfki.de/"><img src="{{ relURL "logos/dfki.png"" }}"></a>
 <a href="https://hessian.ai/"><img src="{{ .Site.BaseURL }}/logos/hessian-ai.png" style="height: 60px"></a>
 <a href="https://www.tu-darmstadt.de/"><img src="{{ .Site.BaseURL }}/logos/tu-darmstadt.svg"></a>
-<a href="https://commoncrawl.org/"><img src="{{ .Site.BaseURL }}/logos/commoncrawl.svg" style="height: 60px"></a>
+<a href="https://commoncrawl.org/"><img src="/logos/commoncrawl.svg" style="height: 60px"></a>
 <a href="https://www.ontocord.ai/"><img src="{{ .Site.BaseURL }}/logos/ontocord.jpg"></a>
 <a href="https://huggingface.co/PleIAs"><img src="{{ .Site.BaseURL }}/logos/pleais.svg"></a>
 <a href="https://www.eleuther.ai/"><img src="{{ .Site.BaseURL }}/logos/eleutherai.png"></a>
