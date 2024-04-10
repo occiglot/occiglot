@@ -56,16 +56,16 @@ We are grateful to the [hessian.AI Innovation Lab](http://hessian.AI) (funded by
 **Collaborators**
 
 <div class="collaborators">
-<a href="https://www.dfki.de/"><img src="{{ relURL "logos/dfki.png"" }}"></a>
-<a href="https://hessian.ai/"><img src="{{ .Site.BaseURL }}/logos/hessian-ai.png" style="height: 60px"></a>
-<a href="https://www.tu-darmstadt.de/"><img src="{{ .Site.BaseURL }}/logos/tu-darmstadt.svg"></a>
+<a href="https://www.dfki.de/"><img src="/logos/dfki.png"></a>
+<a href="https://hessian.ai/"><img src="/logos/hessian-ai.png" style="height: 60px"></a>
+<a href="https://www.tu-darmstadt.de/"><img src="/logos/tu-darmstadt.svg"></a>
 <a href="https://commoncrawl.org/"><img src="/logos/commoncrawl.svg" style="height: 60px"></a>
-<a href="https://www.ontocord.ai/"><img src="{{ .Site.BaseURL }}/logos/ontocord.jpg"></a>
-<a href="https://huggingface.co/PleIAs"><img src="{{ .Site.BaseURL }}/logos/pleais.svg"></a>
-<a href="https://www.eleuther.ai/"><img src="{{ .Site.BaseURL }}/logos/eleutherai.png"></a>
-<a href="https://huggingface.co/DiscoResearch"><img src="{{ .Site.BaseURL }}/logos/discoresearch.webp"></a>
-<a href="https://www.bsc.es"><img src="{{ .Site.BaseURL }}/logos/bsc.png"  style="height: 60px"></a>
+<a href="https://www.ontocord.ai/"><img src="/logos/ontocord.jpg"></a>
+<a href="https://huggingface.co/PleIAs"><img src="/logos/pleais.svg"></a>
+<a href="https://www.eleuther.ai/"><img src="/logos/eleutherai.png"></a>
+<a href="https://huggingface.co/DiscoResearch"><img src="/logos/discoresearch.webp"></a>
+<a href="https://www.bsc.es"><img src="/logos/bsc.png"  style="height: 60px"></a>
 <!-- <a href="https://nlp.uniroma1.it/"><img src="/logos/sapienza.png"></a> -->
-<a href="https://www.european-language-grid.eu"><img src="{{ .Site.BaseURL }}/logos/elg.png"  style="height: 60px"></a>
-<a href="https://european-language-equality.eu"><img src="{{ .Site.BaseURL }}/logos/ele.png"  style="height: 60px"></a>
+<a href="https://www.european-language-grid.eu"><img src="/logos/elg.png"  style="height: 60px"></a>
+<a href="https://european-language-equality.eu"><img src="/logos/ele.png"  style="height: 60px"></a>
 </div>
