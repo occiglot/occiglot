@@ -1,4 +1,5 @@
 baseURL: https://occiglot.github.io/occiglot/
+# baseURL: https://occiglot.eu/
 languageCode: en-us
 
 theme: ["PaperMod"]
