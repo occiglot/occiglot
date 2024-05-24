@@ -2,12 +2,10 @@
 title: "Announcing Occiglot-Fineweb"
 author: "Manuel Brack"
 date: "2024-05-23"
-description: "We release a strong, preliminary multi-lingual dataset."
 tags: ["datasets", "annoucements"]
 ShowToc: false
 TocOpen: false
 ---
-# Announcing Occiglot-Fineweb
 
 Today we release a preliminary artifact of our ongoing effort in curating a strong multilingual datasets. 
 In this early form, the dataset contains roughly 230M heavily cleaned documents from 10 languages. Occiglot Fineweb builds on our existing collection of curated datasets and pre-filtered web data. Subsequently, all documents were filtered with language-specific derivatives of the fine-web processing pipeline and globally depuplicated.

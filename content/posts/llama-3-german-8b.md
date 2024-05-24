@@ -2,13 +2,10 @@
 title: "New Set of German Language Models"
 author: "Manuel Brack"
 date: "2024-05-23"
-description: "In collaboration with DiscoResearch we release "
 tags: ["models", "annoucements"]
 ShowToc: false
 TocOpen: false
 ---
-# New Set of German Language Models
-
 In a joint effort with [DiscoResearch](https://huggingface.co/DiscoResearch) we release at set of new German language models,
 available on [huggingface](). 
 All models are based on [Llama-3-8B](https://llama.meta.com/llama3/) and were continually pre-trained on 65B high-quality German tokens from 
