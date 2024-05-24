@@ -12,7 +12,7 @@ In this early form, the dataset contains roughly 230M heavily cleaned documents 
 
 The current version of the dataset (v0.5) is available on [huggingface](https://huggingface.co/datasets/occiglot/occiglot-fineweb-v0.5) and we will publicly release our [datatrove](https://github.com/huggingface/datatrove) based pipeline shortly.  
 
-In collaboration with [DiscoResearch](https://huggingface.co/DiscoResearch) we also release a set of strong German models based on [Llama-3](https://llama.meta.com/llama3/) that were continual pre-trained on the German split of occiglot-fineweb-v0.5. More information on the model release is available [here]().
+In collaboration with [DiscoResearch](https://huggingface.co/DiscoResearch) we also release a set of strong German models based on [Llama-3](https://llama.meta.com/llama3/) that were continual pre-trained on the German split of occiglot-fineweb-v0.5. More information on the model release is available [here](https://occiglot.eu/posts/llama-3-german-8b/).
 
 ## Pipeline Details
 
