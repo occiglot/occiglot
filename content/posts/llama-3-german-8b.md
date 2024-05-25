@@ -2,7 +2,7 @@
 title: "New Set of German Language Models"
 author: "Manuel Brack"
 date: "2024-05-23"
-tags: ["models", "annoucements"]
+tags: ["models", "announcements"]
 ShowToc: false
 TocOpen: false
 ---
@@ -14,8 +14,8 @@ In addition to these variants that were solely trained on 8k context, we also re
 experimental checkpoint that we obtained through a DARE-TIES merge between our instruction tuned model and the original one provided by Meta.
 Compared to prior releases we made several improvements that result in overall stronger models. 
 
-1. **Llama-3 as a stronger base model.** </br>  Llama-3 is widely considered to be significantly stronger than comparatively sized Mistral models. Similarly, Llama-3 also exhibits basic multilingual capabilites that we extend upon. 
-2. **Higher quality data for continual pre-training.** </br> We utilized 65B tokens that were additionally cleaned and deduplicated (see our latest [dataset announcemnt]()) 
+1. **Llama-3 as a stronger base model.** </br>  Llama-3 is widely considered to be significantly stronger than comparatively sized Mistral models. Similarly, Llama-3 also exhibits basic multilingual capabilities that we extend upon. 
+2. **Higher quality data for continual pre-training.** </br> We utilized 65B tokens that were additionally cleaned and deduplicated (see our latest [dataset announcement]()) 
 3. **More efficient sample packing during pre-training.** </br> We ensured that no documents were truncated in the pre-training data, while maintaining over around 99% packing efficiency. Our benchmark results align with observation from [prior research](https://arxiv.org/abs/2404.10830v2) that this step alone improves performance significantly.  
 4. **Updated fine-tuning dataset.** </br> We additionally, augmented the instruction tuning dataset from DiscoResearch that we also used for our initial german models, to now contain dedicated examples on RAG. 
 
@@ -23,17 +23,17 @@ Compared to prior releases we made several improvements that result in overall s
 
 Preliminary evaluation results can be found below. 
 Please note that the non-English results are based on partially machine-translated datasets and thus should be interpreted with caution.
-Additionally, we observed scores to widely differ with different translations of the same benchmarks. Consequently, meaningful comparisons to evalution results that are, for example, based on the okapi translations are not possible. 
+Additionally, we observed scores to widely differ with different translations of the same benchmarks. Consequently, meaningful comparisons to evaluation results that are, for example, based on the okapi translations are not possible. 
 Currently, we are working on more suitable multilingual benchmarks. German evaluation results were calculated using [GermanBench](https://github.com/bjoernpl/GermanBenchmark).
 
 
-| Model                                | truthful_qa_de | truthfulqa_mc | arc_challenge | arc_challenge_de | hellaswag | hellaswag_de | MMLU   | MMLU-DE | mean    |
-|--------------------------------------|-----------|-----------|--------------|--------------|--------|---------|--------|---------|---------|
-| meta-llama/Meta-Llama-3-8B-Instruct  | 0.47498   | 0.43923   | **0.59642**  | 0.47952      | **0.82025**| 0.60008 | **0.66658**| 0.53541 | 0.57656 |
-| DiscoResearch/Llama3_German_8B       | 0.49499   | 0.44838   | 0.55802      | 0.49829      | 0.79924 | 0.65395 | 0.62240| 0.54413 | 0.57743 |
-| DiscoResearch/Llama3_German_8B_32k   | 0.48920   | 0.45138   | 0.54437      | 0.49232      | 0.79078 | 0.64310 | 0.58774| 0.47971 | 0.55982 |
-| DiscoResearch/Llama3_DiscoLeo_Instruct_8B_v0.1    | **0.53042** | 0.52867   | 0.59556      | **0.53839**     | 0.80721| 0.66440 | 0.61898 | 0.56053 | **0.60552**|
-| DiscoResearch/Llama3_DiscoLeo_Instruct_8B_32k_v0.1| 0.52749   | **0.53245** | 0.58788      | 0.53754      | 0.80770| **0.66709** | 0.62123 | **0.56238** | 0.60547 |
+| Model                                              | truthful_qa_de | truthfulqa_mc | arc_challenge | arc_challenge_de | hellaswag   | hellaswag_de | MMLU        | MMLU-DE     | mean        |
+|----------------------------------------------------|----------------|---------------|---------------|------------------|-------------|--------------|-------------|-------------|-------------|
+| meta-llama/Meta-Llama-3-8B-Instruct                | 0.47498        | 0.43923       | **0.59642**   | 0.47952          | **0.82025** | 0.60008      | **0.66658** | 0.53541     | 0.57656     |
+| DiscoResearch/Llama3_German_8B                     | 0.49499        | 0.44838       | 0.55802       | 0.49829          | 0.79924     | 0.65395      | 0.62240     | 0.54413     | 0.57743     |
+| DiscoResearch/Llama3_German_8B_32k                 | 0.48920        | 0.45138       | 0.54437       | 0.49232          | 0.79078     | 0.64310      | 0.58774     | 0.47971     | 0.55982     |
+| DiscoResearch/Llama3_DiscoLeo_Instruct_8B_v0.1     | **0.53042**    | 0.52867       | 0.59556       | **0.53839**      | 0.80721     | 0.66440      | 0.61898     | 0.56053     | **0.60552** |
+| DiscoResearch/Llama3_DiscoLeo_Instruct_8B_32k_v0.1 | 0.52749        | **0.53245**   | 0.58788       | 0.53754          | 0.80770     | **0.66709**  | 0.62123     | **0.56238** | 0.60547     |
 
 
 ### Document Packing

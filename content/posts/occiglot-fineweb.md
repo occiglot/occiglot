@@ -2,13 +2,13 @@
 title: "Announcing Occiglot-Fineweb"
 author: "Manuel Brack"
 date: "2024-05-23"
-tags: ["datasets", "annoucements"]
+tags: ["datasets", "announcements"]
 ShowToc: false
 TocOpen: false
 ---
 
 Today we release a preliminary artifact of our ongoing effort in curating a strong multilingual datasets. 
-In this early form, the dataset contains roughly 230M heavily cleaned documents from 10 languages. Occiglot Fineweb builds on our existing collection of curated datasets and pre-filtered web data. Subsequently, all documents were filtered with language-specific derivatives of the fine-web processing pipeline and globally depuplicated.
+In this early form, the dataset contains roughly 230M heavily cleaned documents from 10 languages. Occiglot Fineweb builds on our existing collection of curated datasets and pre-filtered web data. Subsequently, all documents were filtered with language-specific derivatives of the fine-web processing pipeline and globally deduplicated.
 
 The current version of the dataset (v0.5) is available on [huggingface](https://huggingface.co/datasets/occiglot/occiglot-fineweb-v0.5) and we will publicly release our [datatrove](https://github.com/huggingface/datatrove) based pipeline shortly.  
 
@@ -20,24 +20,24 @@ We utilized two main datasources in our collection process. From [LLM-Datasets](
 In this form the dataset largely overlaps with the training data used for [initial release](https://occiglot.eu/posts/occiglot-announcement/#model-release-v01) of Occiglot models.
 
 All data was rigorously filtered using language-specific pipelines built upon [Huggingface's fine-web filters](https://github.com/huggingface/datatrove/blob/main/examples/fineweb.py). 
-In addition to some minor hyper-parameter adjustments we mainly modified 3 aspects to ensure language-specific quality filtering. 
+In addition to some minor hyperparameter adjustments we mainly modified 3 aspects to ensure language-specific quality filtering. 
 
-1. Adjust average-word length filters according to lingusitic characteristics of each language
+1. Adjust average-word length filters according to linguistic characteristics of each language
 2. Add language-specific stop words
 3. Add a language-specific policy filter for policy and cookie filtering
 
-Lastly, we performed minhash deduplication on all data of each language seperately. Importantly, we always retain the duplicate not contained in the web-crawled data. For example, if a wikipedia page is also contained in OSCAR, we drop the OSCAR duplicate, thus keeping the wikipedia subset complete. 
+Lastly, we performed minhash deduplication on all data of each language separately. Importantly, we always retain the duplicate not contained in the web-crawled data. For example, if a wikipedia page is also contained in OSCAR, we drop the OSCAR duplicate, thus keeping the wikipedia subset complete. 
 This dataset structure allows to reliably over- or undersample the custom subsets without some of the respective documents re-appearing elsewhere in the data. 
 
 ## Insights and Next steps
 
-One the key takeways from analyzing the cleanup process was the amount of duplicates over the entire data. While some overlap is always to be expected, prior research had suggested that different CommonCrawl releases were largely disjunct. Therefore, we did not deduplicate our OSCAR data for the initial OcciGlot release. However, we observed substantial amounts of duplicates in our dataset. Interestingly, though there are significant differences between languages. 
+One the key takeaways from analyzing the cleanup process was the amount of duplicates over the entire data. While some overlap is always to be expected, prior research had suggested that different CommonCrawl releases were largely disjunct. Therefore, we did not deduplicate our OSCAR data for the initial OcciGlot release. However, we observed substantial amounts of duplicates in our dataset. Interestingly, though there are significant differences between languages. 
 
 | Language | Duplicate Documents | # Total Documents (after filtering)
 | -- |-- | --
 Czech | 15.19% | 38.71M
 Greek | 25.10% | 17.01M
-Portugese | 35.21% | 34.85M
+Portuguese | 35.21% | 34.85M
 Spanish | 41.74% | 72.17M
 Italian | 45.43% | 31.75M
 Polish | 46.35% | 18.68M
@@ -47,7 +47,7 @@ German | 50.92% | 88.43M
 Slovak | 66.23% | 8.47M
 
 The origin of these large differences remains unclear and should warrant further investigation. 
-Further, we observed a consistent improvement in the data quality of CommonCrawl over time. The change in quality becomes most evident when considering the percentage of documents dropped in the filtering process. We showcase examplary numbers for German, but these observations generall hold for most languages: 
+Further, we observed a consistent improvement in the data quality of CommonCrawl over time. The change in quality becomes most evident when considering the percentage of documents dropped in the filtering process. We showcase exemplary numbers for German, but these observations generally hold for most languages: 
 
 | CommonCrawl Release (OSCAR split) | Dropped Documents (Bad Quality) | # Total Documents (before filtering)
 | -- |-- | --
