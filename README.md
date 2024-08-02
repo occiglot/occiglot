@@ -4,7 +4,15 @@
 
 - Install Hugo: https://gohugo.io/installation/
 
-Hugo commands:
+### Install repo
+
+```
+git clone https://github.com/occiglot/occiglot.git
+git submodule update --init
+```
+
+### Hugo commands
+
 ```bash
 # build / publish the website (generates static files in `public` directory)
 hugo
@@ -15,3 +23,7 @@ hugo server
 # add new content
 hugo new content posts/my-first-post.md
 ```
+
+## License
+
+CC-BY-4.0

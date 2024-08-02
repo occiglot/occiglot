@@ -28,6 +28,15 @@ If you are working on topics relevant to European LLMs or seek to contribute to 
 
 More to be announced soon...
 
+**Collaborate With Us**
+
+We are working on a wide range of topics around language models and their application, including data, training, and evaluation.
+It does not matter if you an experienced researcher or a newbie to the field, please join our community.
+Motivation matters more than experience!
+
+To get in touch with us, join our Discord server or reach out via email (see below).
+Every Tuesdays, 10:00am CET we have an open community meeting on our Discord server.
+
 **Contact**
 
 Join our [Discord server](https://discord.gg/wUpvYs4XvM) or send an email to `hello(at)occiglot.org`

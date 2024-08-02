@@ -119,8 +119,13 @@ params:
   author: Occiglot Team
   # author: ["Me", "You"] # multiple authors
 
-  defaultTheme: auto
-  # disableThemeToggle: true
+  label:
+    text: "Occiglot"
+    icon: "/logos/occiglot_logo_bw.svg"
+    
+  defaultTheme: light
+  disableThemeToggle: true
+
   ShowShareButtons: false
   ShowReadingTime: false
   # disableSpecial1stPost: true
