@@ -1,8 +1,8 @@
 ---
-title: "Community OSCAR: A Community Effort for Multilingual Web Crawled Datasets"
-author: "Malte Ostendorff, Manuel Brack, Pedro Ortiz"
+title: "Community OSCAR: A Community Effort for Multilingual Web Data"
+author: "Manuel Brack, Malte Ostendorff, Pedro Ortiz and other contributors"
 date: "2024-08-26"
-description: "Today, we announce the community project and collaboration between Occiglot and the OSCAR project that created a multilingual large-scale Web crawled dataset."
+description: "Today, we announce the community project and collaboration between Occiglot and the OSCAR project that created a multilingual large-scale Web-crawled dataset."
 tags: ["dataset", "announcements"]
 cover:
   image: https://huggingface.co/datasets/malteos/images/resolve/main/community-oscar.medium.png
@@ -214,7 +214,8 @@ The statistics are computed based on uncompressed data and on estimates calculat
 ## Contributors
 
 Community-OSCAR was put together by community members in close colaboration with the [Occiglot research collective](https://occiglot.eu/). 
-This release is supported by and was enabled by contributions from 
+The main contributors are Manuel Brack, Pedro Ortiz, Malte Ostendorff, Patrick Schramowski, Georg Rehm, Kristian Kersting, Jose Javier Saiz, Iñaki Lacunza Castilla, Alexander Shvets, Jorge Palomar-Giner, and Marta Villegas.
+Moreover, this release is supported by and was enabled by contributions from 
 the OSCAR team at [Inria](https://www.inria.fr/en) (project-team [ALMAnaCH](https://almanach.inria.fr/index-en.html)), specially by [Julien Abadji](https://ujj.space), [Rua Ismail](https://oscar-project.org/authors/rua/) and [Benoit Sagot](http://pauillac.inria.fr/~sagot/),
 the [CommonCrawl foundation](https://commoncrawl.org/),
 the [SLT](https://www.dfki.de/en/web/research/research-departments/speech-and-language-technology) and [SAINT](https://www.dfki.de/en/web/research/research-departments/foundations-of-systems-ai) at [DFKI](https://www.dfki.de/en/web),
