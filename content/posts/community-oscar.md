@@ -1,6 +1,6 @@
 ---
 title: "Community OSCAR: A Community Effort for Multilingual Web Data"
-author: "Manuel Brack, Malte Ostendorff, Pedro Ortiz and other contributors"
+author: "Manuel Brack, Malte Ostendorff, Pedro Ortiz Suarez and other contributors"
 date: "2024-08-26"
 description: "Today, we announce the community project and collaboration between Occiglot and the OSCAR project that created a multilingual large-scale Web-crawled dataset."
 tags: ["dataset", "announcements"]
@@ -40,6 +40,14 @@ OSCAR is mainly intended to pre-train language models and word representations.
 For language model training, we highly recommend filtering the data first with these annotations.
 A prefiltered version of the dataset will be released in the near future.
 
+### Next steps
+
+Building the Community-OSCAR dataset is a critical step in advancing core projects at Occiglot. We realized that larger amounts of raw text data were needed to achieve our goal of training dedicated LLMs for underrepresented European languages. 
+In the release of our [Occiglot-fineweb](https://occiglot.eu/posts/occiglot-fineweb/) data curation pipeline, we discussed that many languages needed more (clean) data for meaningful continual pre-training. Community-OSCAR closes that gap for multiple languages. 
+
+Consequently, we are actively working on cleaning all of this new data and deduplicating it against other data sources from our multilingual corpus. We expect to release an updated version of [Occiglot-fineweb](https://occiglot.eu/posts/occiglot-fineweb/) soon. 
+
+Initial experiments on continual-pretraining of LLama-3.1 using this new Occiglot-fineweb data delivered promising results. Stay tuned for future model releases. 
 
 ### Language statistics
 
@@ -214,7 +222,7 @@ The statistics are computed based on uncompressed data and on estimates calculat
 ## Contributors
 
 Community-OSCAR was put together by community members in close colaboration with the [Occiglot research collective](https://occiglot.eu/). 
-The main contributors are Manuel Brack, Pedro Ortiz, Malte Ostendorff, Patrick Schramowski, Georg Rehm, Kristian Kersting, Jose Javier Saiz, Iñaki Lacunza Castilla, Alexander Shvets, Jorge Palomar-Giner, and Marta Villegas.
+The main contributors are Manuel Brack, Pedro Ortiz Suarez, Malte Ostendorff, Patrick Schramowski, Georg Rehm, Kristian Kersting, Jose Javier Saiz, Iñaki Lacunza Castilla, Alexander Shvets, Jorge Palomar-Giner, and Marta Villegas.
 Moreover, this release is supported by and was enabled by contributions from 
 the OSCAR team at [Inria](https://www.inria.fr/en) (project-team [ALMAnaCH](https://almanach.inria.fr/index-en.html)), specially by [Julien Abadji](https://ujj.space), [Rua Ismail](https://oscar-project.org/authors/rua/) and [Benoit Sagot](http://pauillac.inria.fr/~sagot/),
 the [CommonCrawl foundation](https://commoncrawl.org/),
