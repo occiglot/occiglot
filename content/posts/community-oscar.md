@@ -294,7 +294,7 @@ The main contributors are Manuel Brack, Pedro Ortiz, Malte Ostendorff, Patrick S
 Jose Javier Saiz, Iñaki Lacunza Castilla, Alexander Shvets, Jorge Palomar-Giner, and Marta Villegas.
 Moreover, this release is supported by and was enabled by contributions from 
 the OSCAR team at [Inria](https://www.inria.fr/en) (project-team [ALMAnaCH](https://almanach.inria.fr/index-en.html)), specially by [Julien Abadji](https://ujj.space), [Rua Ismail](https://oscar-project.org/authors/rua/) and [Benoit Sagot](http://pauillac.inria.fr/~sagot/),
-the [Common Crawl foundation](https://commoncrawl.org/),
+the [Common Crawl Foundation](https://commoncrawl.org/),
 the [SLT](https://www.dfki.de/en/web/research/research-departments/speech-and-language-technology) and [SAINT](https://www.dfki.de/en/web/research/research-departments/foundations-of-systems-ai) teams at [DFKI](https://www.dfki.de/en/web),
 [TU Darmstadt](https://www.tu-darmstadt.de/),
 the [LangTech unit] at the [Barcelona Supercomputing Center](https://www.bsc.es/),
