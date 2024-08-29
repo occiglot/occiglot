@@ -20,26 +20,101 @@ To change this and make more multilingual data available to the community, we ar
 
 **Community-OSCAR** is an unofficial version of the OSCAR Corpus created by community members. 
 The annotation schema follows the [OSCAR 23.01 release](https://huggingface.co/datasets/oscar-corpus/OSCAR-2301) but is based on 40 monthly dumps of Common Crawl ranging from 2024-22 to 2014-42.
-With these forty dumps, Community-OSCAR is the largest release of the OSCAR Corpus so far. 
+With these forty dumps, Community-OSCAR is the largest release of the OSCAR Corpus so far and available for download on [Huggingface](https://huggingface.co/datasets/oscar-corpus/community-oscar). 
+
 
 ### About OSCAR
 
 The OSCAR project (**O**pen **S**uper-large **C**rawled **A**ggregated co**R**pus) is an Open Source project aiming to provide web-based multilingual resources and datasets for Machine Learning (ML) and Artificial Intelligence (AI) applications. The project focuses specifically in providing large quantities of unannotated raw data that is commonly used in the pre-training of large deep learning models. The OSCAR project has developed [high-performance data pipelines](https://github.com/oscar-corpus/ungoliant) specifically conceived to classify and filter large amounts of [web data](https://commoncrawl.org/). The project has also put special attention in improving the data quality of web-based corpora as well as providing data for low-resource languages, so that these new ML/AI technologies are accessible to as many communities as possible.
 
-### Community effort
+### Community Effort
 
 Community-OSCAR is a release created by members of the OSCAR community and part of an ongoing effort in close colaboration with the [Occiglot research collective](https://occiglot.eu/). 
 We are working on extending this release to all publicly available CommonCrawl dumps and have plenty of ideas on further improvements. 
 If you want to support our activities and collaborate with us, please join the Discord server from the [OSCAR project](https://discord.com/invite/4JNg9FTar4) or [Occiglot research collective](https://discord.gg/wUpvYs4XvM).  
 
-### Data usage
+
+### Data Usage
 
 OSCAR is mainly intended to pre-train language models and word representations.
 
-**NOTE:** Community-OSCAR contains the raw unfiltered CommonCrawl text data but with quality annotations. 
+**NOTE:** Community-OSCAR contains the raw unfiltered Common Crawl text data but with quality annotations. 
 For language model training, we highly recommend filtering the data first with these annotations.
-A prefiltered version of the dataset will be released in the near future.
+A prefiltered version of the dataset will be released in the near future (following the approach from [Occiglot-FineWeb](https://huggingface.co/datasets/occiglot/occiglot-fineweb-v0.5)).
 
+### Data Annotations
+
+Each sample comes with a series of annotations that allow the removal of low quality data.
+
+- `identification`: Language identification based on fastText.
+- `harmful_pp`: This perplexity comes from a [KenLM model](https://kheafield.com/code/kenlm/) trained on harmful content, previously gathered by using the adult annotation in OSCAR 22.01. In other terms, the lower it is, the more likely a given document contains harmful/adult content.
+- `tlsh`: We use TLSH to compute a hash for each document. Locality sensitive hashing is a hashing method that computes similar hashes for similar documents.
+- `quality_warnings`: Computed through heuristics (see below).
+- `categories`: Content categories arom a [URL-based blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php)
+
+The annotation schema is the same as in the [OSCAR 23.01 release](https://huggingface.co/datasets/oscar-corpus/OSCAR-2301).
+
+#### Quality Warnings
+
+* `tiny`: The document has a low (<5) number of lines.
+* `short_sentences`: The document has a high number (>50%) of short lines (<400 bytes)
+* `header`: The document has a high number of short lines at its head, suggesting the presence of low quality content.
+* `footer`: The document has a high number of short lines at its tail, suggesting the presence of low quality content.
+* `noisy`: The document has a high percentage of punctuation (>50%)
+* `adult`: The document contains adult content. This annotation uses a blocklist and labels a tiny part of the corpus: It does not catch most of the adult content.
+
+More information about the thresholds and annotators are present in the [OSCAR paper](https://oscar-project.org/publication/2022/arxiv/towards/).
+
+
+### Data Format
+
+The data is stored as ZSTD-compressed JSON line files.
+Each individual data sample has the following JSON schema:
+
+```js
+{
+   "content":"English sentence\nphrase en français\n????????????", // (1)
+   "warc_headers":{ // (2)
+      "warc-identified-content-language":"fra,eng",
+      "warc-target-uri":"https://fr.wikipedia.org/wiki/...",
+      "warc-record-id":"<urn:uuid:29eaa920-d299-4b1d-b687-c72bd8d68116>",
+      "warc-type":"conversion",
+      "content-length":"35298", // (3)
+      "warc-refers-to":"<urn:uuid:39e42055-0d94-4e45-9c6c-9e7056635d64>",
+      "warc-block-digest":"sha1:WFH2A5WHCS2H365GIAFYQPI7UOAMFGHB", // (3)
+      "warc-date":"2022-11-26T09:45:47Z",
+      "content-type":"text/plain"
+   },
+   "metadata":{
+      "identification":{ // (4)
+         "label":"fr",
+         "prob":0.8938327
+      },
+      "harmful_pp":4063.1814, // (5)
+      "tlsh":"tlsh:T125315FF2B6088901EEA097015DB39B4600B...", // (6)
+      "quality_warnings":[ // (7)
+         "short_sentences",
+         "header",
+         "footer"
+      ],
+      "categories":[ // (8)
+         "examen_pix",
+         "liste_bu"
+      ],
+      "sentence_identifications":[ // (9)
+         {
+            "label":"fr",
+            "prob":0.99837273
+         },
+         {
+            "label":"en",
+            "prob":0.9992377
+         },
+         null
+      ]
+   }
+}
+```
 
 ### Language statistics
 
@@ -211,19 +286,27 @@ The statistics are computed based on uncompressed data and on estimates calculat
 | scn    | Sicilian                    | 118.75B   | 1       | 36.18KiB       | 39              |
 
 
-## Contributors
 
-Community-OSCAR was put together by community members in close colaboration with the [Occiglot research collective](https://occiglot.eu/). 
-The main contributors are Manuel Brack, Pedro Ortiz, Malte Ostendorff, Patrick Schramowski, Georg Rehm, Kristian Kersting, Jose Javier Saiz, Iñaki Lacunza Castilla, Alexander Shvets, Jorge Palomar-Giner, and Marta Villegas.
+### Dataset Curators & Contributors
+
+Community-OSCAR was put together by community members in close collaboration with the [Occiglot research collective](https://occiglot.eu/). 
+The main contributors are Manuel Brack, Pedro Ortiz, Malte Ostendorff, Patrick Schramowski, Georg Rehm, Kristian Kersting, 
+Jose Javier Saiz, Iñaki Lacunza Castilla, Alexander Shvets, Jorge Palomar-Giner, and Marta Villegas.
 Moreover, this release is supported by and was enabled by contributions from 
 the OSCAR team at [Inria](https://www.inria.fr/en) (project-team [ALMAnaCH](https://almanach.inria.fr/index-en.html)), specially by [Julien Abadji](https://ujj.space), [Rua Ismail](https://oscar-project.org/authors/rua/) and [Benoit Sagot](http://pauillac.inria.fr/~sagot/),
-the [CommonCrawl foundation](https://commoncrawl.org/),
-the [SLT](https://www.dfki.de/en/web/research/research-departments/speech-and-language-technology) and [SAINT](https://www.dfki.de/en/web/research/research-departments/foundations-of-systems-ai) at [DFKI](https://www.dfki.de/en/web),
+the [Common Crawl foundation](https://commoncrawl.org/),
+the [SLT](https://www.dfki.de/en/web/research/research-departments/speech-and-language-technology) and [SAINT](https://www.dfki.de/en/web/research/research-departments/foundations-of-systems-ai) teams at [DFKI](https://www.dfki.de/en/web),
 [TU Darmstadt](https://www.tu-darmstadt.de/),
-the [Barcelona Supercomputing Center](https://www.bsc.es/),
+the [LangTech unit] at the [Barcelona Supercomputing Center](https://www.bsc.es/),
 the [42 supercomputer and Hessian AI](https://hessian.ai/),
 the [OpenGPT-X project](https://opengpt-x.de/en/),
 [Fraunhofer](https://www.iais.fraunhofer.de/),
 [Jülich Supercomputing Centre](https://www.fz-juelich.de/),
 [TU Dresden](https://tu-dresden.de/zih),
+[Deutsche Telekom](https://www.telekom.com/),
 as well as by members of the OSCAR community, in particular [Sotaro Takeshita](https://sotaro.io/about), [Sebastian Nagel](https://www.polver.uni-konstanz.de/cnc/people/nagel/).
+
+
+### More Information
+
+More information about the dataset can be found on the [dataset card on Huggingface](https://huggingface.co/datasets/oscar-corpus/community-oscar).
