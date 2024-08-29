@@ -303,7 +303,7 @@ the OSCAR team at [Inria](https://www.inria.fr/en) (project-team [ALMAnaCH](http
 the [Common Crawl Foundation](https://commoncrawl.org/),
 the [SLT](https://www.dfki.de/en/web/research/research-departments/speech-and-language-technology) and [SAINT](https://www.dfki.de/en/web/research/research-departments/foundations-of-systems-ai) teams at [DFKI](https://www.dfki.de/en/web),
 [TU Darmstadt](https://www.tu-darmstadt.de/),
-the [LangTech unit] at the [Barcelona Supercomputing Center](https://www.bsc.es/),
+the [LangTech unit](https://www.bsc.es/discover-bsc/organisation/research-departments/language-technologies-unit) at the [Barcelona Supercomputing Center](https://www.bsc.es/),
 the [42 supercomputer and Hessian AI](https://hessian.ai/),
 the [OpenGPT-X project](https://opengpt-x.de/en/),
 [Fraunhofer](https://www.iais.fraunhofer.de/),
