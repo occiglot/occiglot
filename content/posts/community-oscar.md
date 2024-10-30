@@ -11,7 +11,7 @@ ShowToc: false
 TocOpen: false
 ---
 
-Data is a key incredient and differentiator for deep learning models such as large language models. 
+Data is a key ingredient and differentiator for deep learning models such as large language models. 
 Despite this fact being well known in the industry, the data topic is still pretty much under-explored by the academic and open research commmunity.
 Only recently, the effect of data on large-scale models getting investigated with more attention.
 Notable examples are [Scaling Data-Constrained Language Models (Muennighoff et al., 2023)](https://arxiv.org/abs/2305.16264), [OLMo 1.7–7B: A 24 point improvement on MMLU](https://blog.allenai.org/olmo-1-7-7b-a-24-point-improvement-on-mmlu-92b43f7d269d), or [HuggingFace's FineWeb](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1).
@@ -315,4 +315,4 @@ as well as by members of the OSCAR community, in particular [Sotaro Takeshita](h
 
 ### More Information
 
-More information about the dataset can be found on the [dataset card on Huggingface](https://huggingface.co/datasets/oscar-corpus/community-oscar).
+More information can be found on the [paper](/papers/Community_Oscar.pdf) and the [dataset card on Huggingface](https://huggingface.co/datasets/oscar-corpus/community-oscar).
