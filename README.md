@@ -26,4 +26,4 @@ hugo new content posts/my-first-post.md
 
 ## License
 
-CC-BY-4.0
+If not other defined, the content in this repository is licensed under CC-BY-4.0.
